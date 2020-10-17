@@ -1,6 +1,7 @@
 import pyttsx3
 import datetime
 import speech_recognition as sr
+import sys
 engine = pyttsx3.init()
 def speak(audio):
     engine.say(audio)
@@ -33,9 +34,12 @@ def wishme():
     elif hour>=12 and hour<17:
         speak("Good afternoon pritam boss")
     elif hour>=17 and hour<24:
-        speak("Good evening pritam boss")
+        speak("Happy and Energetic  evening pritam boss")
+ 
     else:
-        speak("Good night pritam boss")
+        speak("Good night pritam boss and have Sweet Dreams. ")
     speak("i am your personal AI assistant prem,   please tell me how can i help you?")
+    
 
 wishme()
+exit()
